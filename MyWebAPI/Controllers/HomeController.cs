@@ -6,9 +6,7 @@ using System.Web.Mvc;
 
 namespace MyWebAPI.Controllers
 {
-    //Hallo Erster TestCommit
-
-
+  
     public class HomeController : Controller
     {
         public ActionResult Index()
