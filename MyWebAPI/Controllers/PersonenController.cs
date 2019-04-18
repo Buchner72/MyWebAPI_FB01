@@ -19,21 +19,26 @@ namespace MyWebAPI.Controllers
             };
 
         [HttpGet]
+        //Besser wäre angeblich Puplic List<PersonN>
         public IEnumerable<PersonN> Get()
         {         
             return personen;
         }
 
-        public IHttpActionResult Get(int id)
-        {          
-            foreach (var p in personen)
-            {
-                if (id==p.Id)
-                {
-                    return Ok(p);
-                }                   
-            }
-            return BadRequest();
+
+        public PersonN Get(int id)
+      //  public IHttpActionResult Get(int id)
+        {
+
+            return personen.Where(x => x.Id == id).FirstOrDefault();
+            //foreach (var p in personen)
+            //{
+            //    if (id==p.Id)
+            //    {
+            //        return Ok(p);
+            //    }                   
+            //}
+            //return BadRequest();
         }
 
         [HttpPost]
