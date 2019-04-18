@@ -11,37 +11,43 @@ namespace MyWebAPI.Controllers
     //  [Route("api/[controller]")]
     public class PersonenController : ApiController
     {
-        [HttpGet]
-        public IEnumerable<Person> Get()
-        {
-            return new[]
-            {
-                new Person
-                {
-                    Vorname = "Franz",
-                    Nachname ="Buchner",
-                    Id=1
-                }
+        IList<PersonN> personen = new List<PersonN>() {
+                new PersonN(){ Id=1, Vorname="Bill", Nachname="Haier"},
+                new PersonN(){ Id=2, Vorname="Steve", Nachname="Huemer"},
+                new PersonN(){ Id=3, Vorname="Ram", Nachname="Klarres"},
+                new PersonN(){ Id=4, Vorname="Moin", Nachname="Laimer"}
             };
+
+        [HttpGet]
+        public IEnumerable<PersonN> Get()
+        {         
+            return personen;
         }
 
         public IHttpActionResult Get(int id)
-        {
-            Person p1 = new Person();
-            p1.Vorname = "Johann";
-            p1.Nachname = "Scheck";
-            return Ok(p1);
-            
+        {          
+            foreach (var p in personen)
+            {
+                if (id==p.Id)
+                {
+                    return Ok(p);
+                }                   
+            }
+            return BadRequest();
         }
 
         [HttpPost]
-        public IHttpActionResult Post([FromBody] Person person)
-        {           
+        public IHttpActionResult Post([FromBody] PersonN person)
+        {
+            int Id = personen.Count + 1;
+            person.Id = Id;
+            personen.Add(person);
+
             return Ok(person);
         }
 
         [HttpPut]
-        public IHttpActionResult Put(int id,[FromBody] Person person)
+        public IHttpActionResult Put(int id,[FromBody] PersonN person)
         {
             return Ok(person);
         }

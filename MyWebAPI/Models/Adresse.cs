@@ -6,13 +6,13 @@ namespace MyWebAPI.Models
     {
         public Adresse()
         {
-            Personen = new HashSet<Person>();
+            Personen = new HashSet<PersonN>();
         }
 
         public int Id { get; set; }
         public string Strasse { get; set; }
         public string Ort { get; set; }
 
-        public virtual ICollection<Person> Personen{ get; set; } 
+        public virtual ICollection<PersonN> Personen{ get; set; } 
     }
 }

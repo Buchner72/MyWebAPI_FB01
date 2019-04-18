@@ -186,3 +186,6 @@ C:\Users\BucFra\Documents\GIT_GitHub\MyWebAPI\MyWebAPI\bin\EntityFramework.dll
 C:\Users\BucFra\Documents\GIT_GitHub\MyWebAPI\MyWebAPI\bin\EntityFramework.SqlServer.dll
 C:\Users\BucFra\Documents\GIT_GitHub\MyWebAPI\MyWebAPI\bin\EntityFramework.xml
 C:\Users\BucFra\Documents\GIT_GitHub\MyWebAPI\MyWebAPI\bin\EntityFramework.SqlServer.xml
+C:\Users\BucFra\Documents\GIT_GitHub\MyWebAPI\MyWebAPI\bin\VertragsLibrary.dll
+C:\Users\BucFra\Documents\GIT_GitHub\MyWebAPI\MyWebAPI\bin\VertragsLibrary.pdb
+C:\Users\BucFra\Documents\GIT_GitHub\MyWebAPI\MyWebAPI\bin\VertragsLibrary.xml

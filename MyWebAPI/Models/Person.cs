@@ -5,7 +5,7 @@ using System.Web;
 
 namespace MyWebAPI.Models
 {
-    public class Person
+    public class PersonN
     {
         public int Id { get; set; }
         public string Vorname { get; set; }
