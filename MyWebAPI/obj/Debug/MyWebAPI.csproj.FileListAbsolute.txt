@@ -182,3 +182,7 @@ C:\Users\Franz Buchner\Documents\GIT_GitHub\MyWebAPI_FB01\MyWebAPI\obj\Debug\MyW
 C:\Users\Franz Buchner\Documents\GIT_GitHub\MyWebAPI_FB01\MyWebAPI\obj\Debug\MyWebAPI.csproj.CopyComplete
 C:\Users\Franz Buchner\Documents\GIT_GitHub\MyWebAPI_FB01\MyWebAPI\obj\Debug\MyWebAPI.dll
 C:\Users\Franz Buchner\Documents\GIT_GitHub\MyWebAPI_FB01\MyWebAPI\obj\Debug\MyWebAPI.pdb
+C:\Users\BucFra\Documents\GIT_GitHub\MyWebAPI\MyWebAPI\bin\EntityFramework.dll
+C:\Users\BucFra\Documents\GIT_GitHub\MyWebAPI\MyWebAPI\bin\EntityFramework.SqlServer.dll
+C:\Users\BucFra\Documents\GIT_GitHub\MyWebAPI\MyWebAPI\bin\EntityFramework.xml
+C:\Users\BucFra\Documents\GIT_GitHub\MyWebAPI\MyWebAPI\bin\EntityFramework.SqlServer.xml
