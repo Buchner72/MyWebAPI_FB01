@@ -10,6 +10,7 @@ namespace MyWebAPI.Controllers
     public class ValuesController : ApiController
     {
         // GET api/values (http://localhost:49608/api/values)
+        [HttpGet]
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
@@ -22,6 +23,7 @@ namespace MyWebAPI.Controllers
         }
 
         // POST api/values
+        [HttpPost]
         public void Post([FromBody]string value)
         {
         }
