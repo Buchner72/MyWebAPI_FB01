@@ -12,7 +12,7 @@ namespace MyWebAPI
         public static void Register(HttpConfiguration config)
         {
 
-            // - Enable CORS (Wichtig!!  Damit Zugriff auch über localhost von Frontend aus funktioniert)
+            // - Enable CORS (Wichtig!!  Damit Zugriff auch über localhost von Frontend aus funktioniert.)
             config.EnableCors(new EnableCorsAttribute("http://localhost:4200", headers: "*", methods: "*"));
 
             // Web-API-Konfiguration und -Dienste
