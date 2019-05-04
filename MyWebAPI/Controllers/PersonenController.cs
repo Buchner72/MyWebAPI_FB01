@@ -15,6 +15,7 @@ namespace MyWebAPI.Controllers
                 new PersonN(){ Id=1, Vorname="Franz", Nachname="Avanger",IsKind=false},
                 new PersonN(){ Id=2, Vorname="Felix", Nachname="Buchner",IsKind=false},
                 new PersonN(){ Id=3, Vorname="Heinz", Nachname="Moser",IsKind=true},
+                new PersonN(){ Id=3, Vorname="Johann", Nachname="Scherz",IsKind=true},
                 new PersonN(){ Id=4, Vorname="Ludwig", Nachname="Pirker", IsKind=true}
             };
 
