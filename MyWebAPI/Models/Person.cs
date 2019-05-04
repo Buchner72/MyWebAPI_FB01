@@ -10,6 +10,9 @@ namespace MyWebAPI.Models
         public int Id { get; set; }
         public string Vorname { get; set; }
         public string Nachname { get; set; }
+        public bool IsKind { get; set; }
+
+        public string PraemieFP { get; set; }
 
         public int AdresseId { get; set; }
         public Adresse Adresse { get; set; }
