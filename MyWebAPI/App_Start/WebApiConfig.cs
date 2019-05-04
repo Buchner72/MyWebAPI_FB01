@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace MyWebAPI
 {
@@ -10,6 +11,10 @@ namespace MyWebAPI
     {
         public static void Register(HttpConfiguration config)
         {
+
+            //Enable CORS
+            config.EnableCors(new EnableCorsAttribute("http://localhost:4200", headers: "*", methods: "*"));
+
             // Web-API-Konfiguration und -Dienste
             config.Formatters.JsonFormatter.SupportedMediaTypes
              .Add(new MediaTypeHeaderValue("text/html"));

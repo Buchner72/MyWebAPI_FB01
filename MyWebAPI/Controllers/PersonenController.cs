@@ -12,10 +12,10 @@ namespace MyWebAPI.Controllers
     public class PersonenController : ApiController
     {
         IList<PersonN> personen = new List<PersonN>() {
-                new PersonN(){ Id=1, Vorname="Bill", Nachname="Haier",IsKind=false},
-                new PersonN(){ Id=2, Vorname="Steve", Nachname="Huemer",IsKind=false},
-                new PersonN(){ Id=3, Vorname="Ram", Nachname="Klarres",IsKind=true},
-                new PersonN(){ Id=4, Vorname="Moin", Nachname="Laimer", IsKind=true}
+                new PersonN(){ Id=1, Vorname="Franz", Nachname="Avanger",IsKind=false},
+                new PersonN(){ Id=2, Vorname="Felix", Nachname="Buchner",IsKind=false},
+                new PersonN(){ Id=3, Vorname="Heinz", Nachname="Moser",IsKind=true},
+                new PersonN(){ Id=4, Vorname="Ludwig", Nachname="Pirker", IsKind=true}
             };
 
         [HttpGet]
