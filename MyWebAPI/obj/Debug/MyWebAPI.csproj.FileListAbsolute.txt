@@ -198,3 +198,6 @@ C:\Users\Franz Buchner\Documents\GIT_GitHub\MyWebAPI_FB01\MyWebAPI\obj\Debug\MyW
 C:\Users\Franz Buchner\Documents\GIT_GitHub\MyWebAPI_FB01\MyWebAPI\bin\System.Web.Cors.dll
 C:\Users\Franz Buchner\Documents\GIT_GitHub\MyWebAPI_FB01\MyWebAPI\bin\System.Web.Http.Cors.dll
 C:\Users\Franz Buchner\Documents\GIT_GitHub\MyWebAPI_FB01\MyWebAPI\bin\System.Web.Http.Cors.xml
+C:\Users\BucFra\Documents\GIT_GitHub\MyWebAPI\MyWebAPI\bin\System.Web.Cors.dll
+C:\Users\BucFra\Documents\GIT_GitHub\MyWebAPI\MyWebAPI\bin\System.Web.Http.Cors.dll
+C:\Users\BucFra\Documents\GIT_GitHub\MyWebAPI\MyWebAPI\bin\System.Web.Http.Cors.xml
