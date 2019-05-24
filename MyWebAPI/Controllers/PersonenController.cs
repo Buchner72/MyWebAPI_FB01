@@ -6,16 +6,21 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
+
+// Info passende Frontend -> FamilyPlus -> GitHub FamilyPlusAngular_FB01
+
 namespace MyWebAPI.Controllers
 {
+
     // [Route("api/[controller]")]
     public class PersonenController : ApiController
     {
         IList<PersonN> personen = new List<PersonN>() {
-                new PersonN(){ Id=1, Vorname="Bill", Nachname="Haier",IsKind=false},
-                new PersonN(){ Id=2, Vorname="Steve", Nachname="Huemer",IsKind=false},
-                new PersonN(){ Id=3, Vorname="Ram", Nachname="Klarres",IsKind=true},
-                new PersonN(){ Id=4, Vorname="Moin", Nachname="Laimer", IsKind=true}
+                new PersonN(){ Id=1, Vorname="Franz", Nachname="MyWebAPI",IsKind=false,PraemieFP="1,99", AdresseId=10 },
+                new PersonN(){ Id=2, Vorname="Felix", Nachname="Buchner",IsKind=false ,PraemieFP="1,99", AdresseId=10},
+                new PersonN(){ Id=3, Vorname="Heinz", Nachname="Moser",IsKind=true,PraemieFP="1,99",  AdresseId=10},
+                new PersonN(){ Id=3, Vorname="Johann", Nachname="Scherz",IsKind=true,PraemieFP="1,99", AdresseId=10},
+                new PersonN(){ Id=4, Vorname="Ludwig", Nachname="Pirker", IsKind=true,PraemieFP="1,99", AdresseId=10}
             };
 
         [HttpGet]
@@ -59,7 +64,7 @@ namespace MyWebAPI.Controllers
         {
             return Ok(person);
         }
-     
+
         //Direckt aufrufbare Funktionen
         [Route("api/Personen/GetFirstName")]   //Aufruf: GET - http://localhost:49608/api/Personen/GetFirstName 
         public List<string> GetFirstName()
@@ -69,12 +74,12 @@ namespace MyWebAPI.Controllers
             {
                 output.Add(p.Vorname);
             }
-            return output;           
+            return output;
         }
 
         [Route("api/Personen/ClacFP")]   //Aufruf: GET - http://localhost:49608/api/Personen/ClacFP
         public IEnumerable<PersonN> GetPraemieFP()
-        {        
+        {
             foreach (var p in personen)
             {
                 if (p.IsKind)
@@ -84,7 +89,7 @@ namespace MyWebAPI.Controllers
                 else
                 {
                     p.PraemieFP = "5,70";
-                }             
+                }
             }
             return personen;
         }
